@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <div class="container">
+        <header class="d-flex justify-content-center py-3">
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="/" class="nav-link active" aria-current="page">Главная</a></li>
+                <li class="nav-item"><a href="task_1" class="nav-link">Задание 1</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Задание 2</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Задание 3</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Задание 4</a></li>
+            </ul>
+        </header>
+    </div>
+    {% block body %}
+    {% endblock %}
+</body>
+<footer>
+    <div class="container">
+    <footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Главная</a></li>
+    </ul>
+    <p class="text-center text-muted">© 2022 Бугарев Дмитрий</p>
+  </footer>
+</div>
+</footer>
+</html>
